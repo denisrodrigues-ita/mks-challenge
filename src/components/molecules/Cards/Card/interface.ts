@@ -6,7 +6,7 @@ export interface ProductProps {
     description: string;
     updateAt: string;
     createdAt: string;
-    price: string;
+    price: number;
     photo: string;
   };
 }

@@ -15,7 +15,7 @@ import Image from "next/image";
 import { useCartStore } from "@/store";
 
 const Card: React.FC<ProductProps> = ({ product }) => {
-  const { addToCart, cart } = useCartStore();
+  const { addToCart } = useCartStore();
 
   return (
     <CardContainer>

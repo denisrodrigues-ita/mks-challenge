@@ -8,7 +8,7 @@ export interface CardsProps {
       description: string;
       updateAt: string;
       createdAt: string;
-      price: string;
+      price: number;
       photo: string;
     }[];
   };
