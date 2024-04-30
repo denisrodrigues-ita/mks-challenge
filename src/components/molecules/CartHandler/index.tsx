@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/components/atoms";
 import { useCartStore } from "@/store";
 import { SideBarCardProps } from "./interface";
-import { Container, FlexColumn, Quantiti, VerticalBar, Text } from "./styles";
+import { Container, FlexColumn, Quantiti, Text } from "./styles";
 
 const CartHandler: React.FC<SideBarCardProps> = ({ product }) => {
   const { countIndividualItem, decreaseItem, increaseItem } = useCartStore();
@@ -13,16 +13,28 @@ const CartHandler: React.FC<SideBarCardProps> = ({ product }) => {
       <Container>
         <Button
           onClick={() => decreaseItem(product.id)}
-          custonStyle={{ background: "transparent" }}
+          custonStyle={{
+            background: "transparent",
+            width: "33%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
           -
         </Button>
-        <VerticalBar />
         <Quantiti>{countIndividualItem(product.id)}</Quantiti>
-        <VerticalBar />
         <Button
           onClick={() => increaseItem(product.id)}
-          custonStyle={{ background: "transparent" }}
+          custonStyle={{
+            background: "transparent",
+            width: "33%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
           +
         </Button>

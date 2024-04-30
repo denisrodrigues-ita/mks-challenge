@@ -20,22 +20,26 @@ export const Container = styled.div`
 `;
 
 export const Quantiti = styled.span`
-  font-size: 0.8rem;
-  font-weight: 400;
-  line-height: 0.975rem;
-
-  @media screen and (max-width: ${breakpoints.mobile}) {
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 2.438rem;
-  }
-`;
-
-export const VerticalBar = styled.span`
   ${({ theme }) => css`
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 0.975rem;
     border-color: ${theme.colors.gray.gray200};
-    border: 0.2px solid ${theme.colors.gray.gray200};
+    border-style: solid;
+    border-width: 0 1px 0 1px;
     height: 100%;
+    width: 33%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+
+    @media screen and (max-width: ${breakpoints.mobile}) {
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 2.438rem;
+    }
   `}
 `;
 
