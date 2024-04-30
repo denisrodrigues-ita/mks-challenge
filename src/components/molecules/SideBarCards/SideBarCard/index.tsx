@@ -19,8 +19,8 @@ const SideBarCard: React.FC<SideBarCardProps> = ({ product }) => {
         <Title>{product.name}</Title>
         <CartHandler product={product} />
         <Price>R${product.price}</Price>
+        <Button onClick={() => removeFromCart(product.id)}>X</Button>
       </Container>
-      <Button onClick={() => removeFromCart(product.id)}>X</Button>
     </Flex>
   );
 };

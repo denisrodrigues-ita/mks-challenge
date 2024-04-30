@@ -19,6 +19,7 @@ export const Container = styled.div`
     height: 10.1rem;
     border-radius: 0.5rem;
     padding: 1rem;
+    position: relative;
 
     @media screen and (max-width: ${breakpoints.mobile}) {
       width: 25rem;
@@ -81,7 +82,6 @@ export const Price = styled.p`
 
 export const Button = styled.button`
   ${({ theme }) => css`
-    translate: -20px -48px;
     color: ${theme.colors.white.white50};
     background-color: ${theme.colors.black.black50};
     width: 1.8rem;
@@ -92,14 +92,18 @@ export const Button = styled.button`
     justify-content: center;
     cursor: pointer;
     border: none;
+    position: absolute;
+    right: -0.8rem;
+    top: -0.8rem;
 
     @media screen and (max-width: ${breakpoints.mobile}) {
-      translate: -176px -84px;
       color: ${theme.colors.black.black50};
       background-color: transparent;
       font-weight: 400;
       font-size: 4.2rem;
       line-height: 1.7rem;
+      right: 1.2rem;
+      top: 1.2rem;
     }
   `};
 `;
