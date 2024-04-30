@@ -58,7 +58,7 @@ const Card: React.FC<ProductProps> = ({ product }) => {
             src={BagIcon}
             alt="sacola de compra"
             width={12}
-            height={13.5}
+            height={14}
           />{" "}
           Comprar
         </Button>
