@@ -1,6 +1,6 @@
 import Card from "@/components/molecules/Cards/Card";
-import { theme, GlobalStyle } from "@/theme";
 import { render, screen } from "@testing-library/react";
+import { theme, GlobalStyle } from "@/theme";
 import { ThemeProvider } from "styled-components";
 
 const mockProduct = [
