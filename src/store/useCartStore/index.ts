@@ -80,9 +80,11 @@ const useCartStore = create<CartStateProps>((set) => ({
   totalPrice: (): number => {
     let total = 0;
     if (useCartStore.getState().cart.length === 0) return total;
-    useCartStore.getState().cart.forEach((item: { price: number; count: number }) => {
-      total += item.price * item.count;
-    });
+    useCartStore
+      .getState()
+      .cart.forEach((item: { price: number; count: number }) => {
+        total += item.price * item.count;
+      });
     return total;
   },
 }));

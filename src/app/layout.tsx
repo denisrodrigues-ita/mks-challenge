@@ -4,8 +4,8 @@ import { Footer, Header } from "@/components/organisms";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "MKS Challenge",
-  description: "MKS Challenge to Frontend Developer",
+  title: "Ddev - Soluções web.",
+  description: "Teste prático para uma vaga de desenvolvedor front-end",
 };
 
 export default function RootLayout({

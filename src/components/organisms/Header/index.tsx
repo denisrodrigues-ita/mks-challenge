@@ -13,8 +13,8 @@ const Header = () => {
   return (
     <Container>
       <Wrapper>
-        <Title>MKS</Title>
-        <Text>Sistemas</Text>
+        <Title>Ddev</Title>
+        <Text>Soluções web.</Text>
       </Wrapper>
       <Button onClick={() => handleCartSideBar()}>
         <Cart countItems={countItems()} />
